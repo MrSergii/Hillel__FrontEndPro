@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Frontend Pro</title>
+</head>
+<body>
+
+    <script>
+
+        /*
+        1. Треба реалізувати просту програму з наступними умовами:
+        За допомогою prompt запитати “ім'я користувача”.
+        За допомогою alert вивести "Hello, John! How are you?" , де “John” це те, що ввів користувач
+        */
+
+        let name = prompt("Как Вас зовут?");
+        alert("Hello, " + name + " ! How are you?")
+
+        /*
+        2. Дано тризначне число, яке надае користувач, потрибно визначити:
+        Чи правда, що всі цифри однакові?
+        Чи є серед цифр цифри однакові?
+        */
+
+        const num = prompt("Введите трёхзначное число");
+        const a = num[0];
+        const b = num[1];
+        const c = num[2];
+        if (a == b == c) {
+            alert('Все числа одинаковы')
+        } else if (a == b || a == c || b == c){
+            alert('Есть два одинаковых числа')
+        }
+          else {
+            alert('Все числа разные')
+        };
+
+        /*
+        3.Портрет користувача
+        */
+
+        const birth = Number(prompt("Введите год Вашего рождения"));
+        const city = prompt("В каком городе Вы проживаете?");
+        const sport = prompt("Какой у Вас любимый вид спорта ?");
+
+        // Сделал в двух вариантах. С функцией и без
+
+        if (birth === null) {
+            alert("Жаль, что Вы не захотели вводить свой год рождения")
+        } else {
+            alert("Вы родились в " + birth + " году");
+        };
+
+        cityFunc();
+
+        if (sport === null) {
+            alert("Жаль, что Вы не захотели вводить свой любимый вид спорта")
+        } else {
+            alert("Ваш любимый вид спорта " + sport);
+        };
+
+
+
+
+        function cityFunc(){
+            if (city === "Киев" || city === "Вашингтон" || city === "Лондон") {
+                alert("Вы проживаете в столице " + city)
+
+            } else if (city === null){
+                alert("Жаль, что Вы не захотели вводить свой город")
+            
+            } else {
+                alert("Вы живёте в городе " + city)
+
+            }
+        }
+
+
+    </script>
+
+</body>
+</html>

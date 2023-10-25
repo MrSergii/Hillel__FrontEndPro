@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Frontend Pro</title>
+</head>
+<body>
+
+    <script>
+
+        // Знайти суму всіх цілих чисел від 1 до 15
+        let sum = 0;
+        
+        for (let i = 1; i <= 15; i++){
+            sum += i;
+        }
+        console.log('сума всіх цілих чисел від 1 до 15 = ' + sum);
+        
+    
+        // Знайти добуток усіх цілих чисел від 15 до 35
+        let mult = 1;
+
+        for (let i = 15; i <= 35; i++){
+            mult *= i;
+        }
+        console.log('добуток всіх цілих чисел від 15 до 35 = ' + mult);
+
+
+        // Знайти середнє арифметичне всіх цілих чисел від 1 до 500
+        let sum1 = 0;
+
+        for (let i = 1; i <= 500 ; i++) {
+            sum1 += i;
+        }
+
+        let aver = sum1 / 500;
+        console.log('Знайти середнє арифметичне всіх цілих чисел від 1 до 500 = ' + aver);
+
+
+        // Вивести суму лише парних чисел у діапазоні від 30 до 80
+        let sum3 = 0;
+        
+        for (let i = 30; i <= 80; i++) {
+            if (i % 2 === 0) {
+                sum3 += i;
+            }
+        }
+        console.log('сума парних чисел у діапазоні від 30 до 80 = ' + sum3);
+
+
+        // Вивести на консоль таблицю Піфагора з використанням циклів.
+        let row = '';
+
+        for (let i = 1; i <= 10; i++) {
+            for (let j = 1; j <= 10; j++) {
+                let pif = i * j
+                document.write(pif + ' ')
+
+            }
+            document.write('<br>')
+        }
+
+    </script>
+
+</body>
+</html>

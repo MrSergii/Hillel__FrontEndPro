@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frontend Pro</title>
+</head>
+<body>
+
+
+
+    <script>
+        
+        // 1) Розкласти за цифрами п'ятизначне число і вивести у вихідному порядку через пробіл
+
+        let num = 10369;
+        let str = String(num);
+        let result = str.split('').join(' ');
+        console.log(result)
+
+
+        // 2) Створити скрипт для складання, віднімання, множення та поділу двох чисел та виведення результатів.
+
+        // сложение
+        function sum(a, b){
+            return a + b
+        }
+        console.log(sum(+prompt("Введите первое число, для сложения"), +prompt("Введите второе число, для сложения")));
+
+        // вычитание
+        function min(a, b){
+            return a - b
+        }
+        console.log(min(+prompt("Введите первое число, для вычитания"), +prompt("Введите второе число, для вычитания")));
+
+        // умножение
+        function mult(a, b){
+            return a * b
+        }
+        console.log(mult(+prompt("Введите первое число, для умножения"), +prompt("Введите второе число, для умножения")));
+
+        // деление
+        function div(a, b){
+            return a / b
+        }
+        console.log(div(+prompt("Введите первое число, для деления"), +prompt("Введите второе число, для деления")));
+
+
+        // 3*) Зробити функцію, яка викликатиме діалогове вікно (prompt) для введення імені. Завжди робити першу букву великої та виводити її в новому повідомленні (alert).
+
+        let name = prompt("Введите Ваше имя")
+
+        function bigFirstLetterName(){
+            let bigFirstLetter = name.charAt(0).toUpperCase() + name.slice(1);
+            alert("Привет, " + bigFirstLetter);
+        }
+        bigFirstLetterName();
+
+        
+
+    </script>
+
+</body>
+</html>

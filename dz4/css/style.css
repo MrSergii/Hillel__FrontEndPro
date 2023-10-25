@@ -1,0 +1,31 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding: 50px;
+}
+
+.product-card {
+    display: inline-block;
+    position: relative;
+    width: 384px;
+    height: 384px;
+}
+
+.product-image {
+    max-width: 100%;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.product-description {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 384px;
+    height: 384px;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    transition: opacity 0.3s ease-in-out;
+}
